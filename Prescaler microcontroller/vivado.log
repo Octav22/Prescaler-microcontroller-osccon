@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Mar 11 20:15:05 2025
+# Process ID         : 1576
+# Current directory  : C:/Users/octav/Desktop/Prescaler microcontroller
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent1272 C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.xpr
+# Log file           : C:/Users/octav/Desktop/Prescaler microcontroller/vivado.log
+# Journal file       : C:/Users/octav/Desktop/Prescaler microcontroller\vivado.jou
+# Running On         : DESKTOP-HPE2C2O
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i7-2600K CPU @ 3.40GHz
+# CPU Frequency      : 3400 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8555 MB
+# Swap memory        : 7516 MB
+# Total Virtual      : 16071 MB
+# Available Virtual  : 7668 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.xpr}
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7s50csga324-1
+Top: Top
+INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8544
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1773.316 ; gain = 464.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v:1]
+INFO: [Synth 8-6157] synthesizing module 'demux' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'demux' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'demux__parameterized0' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v:1]
+	Parameter N bound to: 3'b100 
+INFO: [Synth 8-6155] done synthesizing module 'demux__parameterized0' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v:1]
+INFO: [Synth 8-6157] synthesizing module 'osccon_reg' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'osccon_reg' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v:1]
+INFO: [Synth 8-6157] synthesizing module 'prescaler' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v:1]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v:1]
+INFO: [Synth 8-6157] synthesizing module 'freq_div' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'freq_div' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'freq_div__parameterized0' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v:1]
+	Parameter x bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'freq_div__parameterized0' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'freq_div__parameterized1' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v:1]
+	Parameter x bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'freq_div__parameterized1' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-226] default block is never used [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'prescaler' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v:1]
+INFO: [Synth 8-6157] synthesizing module 'program_counter' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'program_counter' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'ram_instr' [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'ram_instr' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Top' (0#1) [C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v:1]
+WARNING: [Synth 8-7129] Port en in module freq_div__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port en in module freq_div__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port en in module freq_div is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1879.082 ; gain = 570.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1879.082 ; gain = 570.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1879.082 ; gain = 570.559
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1879.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1957.582 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2173.863 ; gain = 865.340
+31 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 2173.863 ; gain = 1016.203
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module freq_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module osccon_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prescaler
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_instr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Testbench_behav xil_defaultlib.Testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Testbench_behav xil_defaultlib.Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v" Line 1. Module Top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux(N=3'b100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v" Line 1. Module osccon_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v" Line 1. Module prescaler doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v" Line 1. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b11) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v" Line 1. Module program_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v" Line 1. Module ram_instr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v" Line 1. Module Top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux(N=3'b100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v" Line 1. Module osccon_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v" Line 1. Module prescaler doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v" Line 1. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b11) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v" Line 1. Module program_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v" Line 1. Module ram_instr doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.demux(N=3'b100)
+Compiling module xil_defaultlib.osccon_reg
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.freq_div
+Compiling module xil_defaultlib.freq_div(x=2'b10)
+Compiling module xil_defaultlib.freq_div(x=2'b11)
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.prescaler
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.ram_instr
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.Testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2177.453 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Testbench_behav -key {Behavioral:sim_1:Functional:Testbench} -tclbatch {Testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 230 ns : File "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sim_1/new/Testbench.v" Line 105
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:14 . Memory (MB): peak = 2206.391 ; gain = 28.938
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\prescaler.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\prescaler.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\prescaler.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\prescaler.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sources_1\new\Top.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\octav\Desktop\Prescaler microcontroller\Prescaler microcontroller.srcs\sim_1\new\Testbench.v:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'Testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'Testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module demux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module freq_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module osccon_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module prescaler
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module program_counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_instr
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sim_1/new/Testbench.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Testbench
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Testbench_behav xil_defaultlib.Testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Testbench_behav xil_defaultlib.Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v" Line 1. Module Top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux(N=3'b100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v" Line 1. Module osccon_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v" Line 1. Module prescaler doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v" Line 1. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b11) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v" Line 1. Module program_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v" Line 1. Module ram_instr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/Top.v" Line 1. Module Top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/demux.v" Line 1. Module demux(N=3'b100) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/osccon_reg.v" Line 1. Module osccon_reg doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/prescaler.v" Line 1. Module prescaler doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/decoder.v" Line 1. Module decoder doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b10) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/freq_div.v" Line 1. Module freq_div(x=2'b11) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/mux.v" Line 1. Module mux doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/program_counter.v" Line 1. Module program_counter doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sources_1/new/ram_instr.v" Line 1. Module ram_instr doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.demux
+Compiling module xil_defaultlib.demux(N=3'b100)
+Compiling module xil_defaultlib.osccon_reg
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.freq_div
+Compiling module xil_defaultlib.freq_div(x=2'b10)
+Compiling module xil_defaultlib.freq_div(x=2'b11)
+Compiling module xil_defaultlib.mux
+Compiling module xil_defaultlib.prescaler
+Compiling module xil_defaultlib.program_counter
+Compiling module xil_defaultlib.ram_instr
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.Testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Testbench_behav -key {Behavioral:sim_1:Functional:Testbench} -tclbatch {Testbench.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 230 ns : File "C:/Users/octav/Desktop/Prescaler microcontroller/Prescaler microcontroller.srcs/sim_1/new/Testbench.v" Line 79
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2233.844 ; gain = 2.637
+save_wave_config {C:/Users/octav/Desktop/Prescaler microcontroller/Testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 11 20:19:04 2025...
